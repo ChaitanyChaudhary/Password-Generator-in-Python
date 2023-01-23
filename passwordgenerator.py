@@ -5,6 +5,7 @@ string module: This module provides string constants that we can use to define t
 
 '''
 
+# import time
 import secrets
 import string
 
@@ -35,3 +36,4 @@ while True:
     break
 
 print(passwd)
+# time.sleep(10)
