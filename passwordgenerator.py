@@ -23,6 +23,8 @@ passwd = ''
 for i in range(passwd_lenght):
   passwd += ''.join(secrets.choice(alphabet))
 
+print("Select any one of the two passwords!\n")
+print("Password 1: \n")
 print(passwd)
 
 # To repeat above process for the length of the password use loop.
@@ -34,6 +36,6 @@ while True:
   if (any(char in special_chars for char in passwd)
       and sum(char in digits for char in passwd) >= 2):
     break
-
+print("\nPassword 2: \n")
 print(passwd)
 # time.sleep(10)
