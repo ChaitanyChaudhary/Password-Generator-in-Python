@@ -16,7 +16,7 @@ special_chars = string.punctuation  #The punctuation constant is the string of a
 alphabet = letters + digits + special_chars  #Now concatenate the above string constants to get the alphabet.
 
 # fix password length
-passwd_lenght = 36
+passwd_lenght = 40
 
 # generate a password string
 passwd = ''
