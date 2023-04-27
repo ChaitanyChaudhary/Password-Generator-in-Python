@@ -5,7 +5,6 @@ string module: This module provides string constants that we can use to define t
 
 '''
 
-# import time
 import secrets
 import string
 
@@ -15,13 +14,11 @@ special_chars = string.punctuation  #The punctuation constant is the string of a
 
 alphabet = letters + digits + special_chars  #Now concatenate the above string constants to get the alphabet.
 
-# fix password length
-passwd_lenght = 40
+# ask user for password length
+passwd_length = int(input("Enter the length of the password you want: "))
 
 # generate a password string
-passwd = ''
-for i in range(passwd_lenght):
-  passwd += ''.join(secrets.choice(alphabet))
+passwd = ''.join(secrets.choice(alphabet) for i in range(passwd_length))
 
 print("Select any one of the two passwords!\n")
 print("Password 1: \n")
@@ -29,13 +26,10 @@ print(passwd)
 
 # To repeat above process for the length of the password use loop.
 while True:
-  passwd = ''
-  for i in range(passwd_lenght):
-    passwd += ''.join(secrets.choice(alphabet))
+  passwd = ''.join(secrets.choice(alphabet) for i in range(passwd_length))
 
   if (any(char in special_chars for char in passwd)
       and sum(char in digits for char in passwd) >= 2):
     break
 print("\nPassword 2: \n")
 print(passwd)
-# time.sleep(10)
