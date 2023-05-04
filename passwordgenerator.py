@@ -8,11 +8,11 @@ string module: This module provides string constants that we can use to define t
 import secrets
 import string
 
-letters = string.ascii_letters  #The ascii_letters is a concatenation of letters lowercase and uppercase letters.
-digits = string.digits  #The digits constant is the string containing the numbers 0 to 9.
-special_chars = string.punctuation  #The punctuation constant is the string of all special characters.
+letters = string.ascii_letters
+digits = string.digits
+special_chars = string.punctuation
 
-alphabet = letters + digits + special_chars  #Now concatenate the above string constants to get the alphabet.
+alphabet = letters + digits + special_chars
 
 # ask user for password length
 passwd_length = int(input("Enter the length of the password you want: "))
