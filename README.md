@@ -31,7 +31,7 @@ python passwordgenerator.py
     
 ## Usage Guide
 
-1. Run the script `passwordgenerator.py` using the instructions provided in the [Installation Instructions](#installation) section.
+1. Run the script `passwordgenerator.py` using the instructions provided in the [Installation](#installation) section.
 2. Enter the desired length of the password when prompted.
 3. The program will generate two password options.
 4. Select one of the passwords for use.
