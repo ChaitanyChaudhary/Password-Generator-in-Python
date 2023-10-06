@@ -2,7 +2,7 @@
 
 ## Description
 
-The Password Generator in Python is a command-line program that generates random passwords based on user specifications. It utilizes the `secrets` module to generate cryptographically strong random numbers and the `string` module to define the alphabet of characters for password generation.
+The Password Generator is a command-line program that generates random passwords based on user specifications. It utilizes the `secrets` module to generate cryptographically strong random numbers and the `string` module to define the alphabet of characters for password generation.
 ## Features
 
 - Generates random passwords with specified length
